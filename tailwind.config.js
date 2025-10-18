@@ -1,12 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  darkMode: 'media', // Enables system-based dark mode
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}"
-  ],
-  theme: {
-    extend: {},
-  },
+export default {
+  // Use class-based dark mode so toggling the 'dark' class on <html> works
+  darkMode: 'class',
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: { extend: {} },
   plugins: [],
 };

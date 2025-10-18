@@ -93,7 +93,7 @@ const experience = [
   {
     company: "VR Della Infotech",
     title: "Full‑Stack Developer",
-    period: "2021 – 2021",
+    period: "2021 – 2022",
     bullets: [
       "Delivered multi‑tenant SaaS for e‑commerce.",
       "Reusable React components + state management.",
