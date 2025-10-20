@@ -1,16 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --color-beige: #f5f5dc;
-}
-
-/* Base tweaks and dark-mode aware background defaults */
-@layer base {
-  html, body, #root { height: 100%; }
-
-  /* Use explicit hex fallbacks instead of theme() to avoid postcss resolution issues */
-  html { background-color: #f9fafb; /* tailwind gray-50 */ }
-  html.dark { background-color: #0f172a; /* tailwind gray-950 */ }
-}
+@import "tailwindcss";
