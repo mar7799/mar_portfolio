@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { FiGithub, FiLinkedin, FiMail, FiExternalLink, FiDownload } from 'react-icons/fi'
 import my_resume from './assets/Amram M Full Stack.docx'
 import Button from './components/ui/Button'
@@ -73,39 +73,48 @@ const BLOGS = [
   { title: 'Optimizing Java REST APIs from 2s to 200ms', href: '#' },
 ]
 
-// --- Theme hook (pure JS) ---
+// --- Theme hook (browser-safe + Tailwind-friendly) ---
 function useTheme() {
-  const [theme, setTheme] = useState(() => {
-    const saved = localStorage.getItem('theme')
-    if (saved === 'light' || saved === 'dark') return saved
-    if (typeof window !== 'undefined' && window.matchMedia) {
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-    }
-    return 'light'
-  })
+  const [theme, setTheme] = useState('light')
+  const [mounted, setMounted] = useState(false)
 
+  // Resolve initial theme after mount to avoid SSR/localStorage issues
   useEffect(() => {
-    const root = document.documentElement
-    if (theme === 'dark') root.classList.add('dark')
-    else root.classList.remove('dark')
-    localStorage.setItem('theme', theme)
-  }, [theme])
-
-  useEffect(() => {
-    const saved = localStorage.getItem('theme')
-    if (saved === 'light' || saved === 'dark') return
-    const mq = window.matchMedia('(prefers-color-scheme: dark)')
-    const handler = (e) => setTheme(e.matches ? 'dark' : 'light')
-    if (mq.addEventListener) mq.addEventListener('change', handler)
-    else if (mq.addListener) mq.addListener(handler) // Safari < 14 fallback
-    return () => {
-      if (mq.removeEventListener) mq.removeEventListener('change', handler)
-      else if (mq.removeListener) mq.removeListener(handler)
+    const stored = typeof window !== 'undefined' ? localStorage.getItem('theme') : null
+    if (stored === 'dark' || stored === 'light') {
+      setTheme(stored)
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark')
     }
+    setMounted(true)
   }, [])
 
-  const toggle = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'))
-  return useMemo(() => ({ theme, toggle }), [theme])
+  // Sync theme to <html> for Tailwind's `dark:` selector
+  useEffect(() => {
+    if (!mounted) return
+    const root = document.documentElement
+    root.classList.toggle('dark', theme === 'dark')
+    root.dataset.theme = theme
+    root.style.colorScheme = theme === 'dark' ? 'dark' : 'light'
+    localStorage.setItem('theme', theme)
+  }, [theme, mounted])
+
+  // Follow OS preference until the user chooses explicitly
+  useEffect(() => {
+    if (!mounted) return
+    const mq = window.matchMedia('(prefers-color-scheme: dark)')
+    const handler = (e) => {
+      const saved = localStorage.getItem('theme')
+      if (saved === 'dark' || saved === 'light') return
+      setTheme(e.matches ? 'dark' : 'light')
+    }
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [mounted])
+
+  const toggle = useCallback(() => setTheme((t) => (t === 'dark' ? 'light' : 'dark')), [])
+
+  return useMemo(() => ({ theme, toggle, mounted }), [theme, mounted, toggle])
 }
 
 // --- Small presentational components ---
