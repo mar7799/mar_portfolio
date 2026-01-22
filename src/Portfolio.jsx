@@ -181,8 +181,10 @@ function Hero() {
   )
 }
 
+
+
 export default function Portfolio() {
-  const { theme, toggle } = useTheme()
+  const { theme, mode, toggle, setSystem } = useTheme()
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-700 dark:text-gray-300">
@@ -198,7 +200,7 @@ export default function Portfolio() {
               <Button variant="ghost" size="sm" className="p-2 hover:bg-indigo-50 dark:hover:bg-indigo-800 transform hover:scale-105 transition"><FiLinkedin /></Button>
             </a>
             <button onClick={toggle} aria-label="Toggle theme" title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>
-              <Button variant="ghost" size="sm" className="p-2 hover:bg-indigo-50 dark:hover:bg-indigo-800 transform hover:scale-105 transition">{theme === 'dark' ? '🌞' : '🌙'}</Button>
+              <Button variant="ghost" size="sm" className="p-2 hover:bg-indigo-50 dark:hover:bg-indigo-800 transform hover:scale-105 transition">{theme === 'dark' ? '🌙' : '🌞'}</Button>
             </button>
           </div>
         </div>
