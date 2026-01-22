@@ -6,4 +6,18 @@ export const SKILLS = [
   { title: 'Messaging', items: ['Kafka', 'RabbitMQ', 'SQS'] },
   { title: 'Observability', items: ['ELK (Elastic, Logstash, Kibana)', 'Prometheus', 'Grafana'] },
   { title: 'Resilience', items: ['Resilience4j', 'Circuit Breakers', 'Rate Limiting'] },
+  {
+    title: 'AI & LLM',
+    items: [
+      'LLMs (OpenAI, Claude, Gemini)',
+      'Prompt Engineering',
+      'RAG (Retrieval-Augmented Generation)',
+      'Vector Databases (Pinecone, FAISS, Chroma)',
+      'LangChain.js',
+      'Embeddings & Semantic Search',
+      'AI Agent Orchestration',
+      'Ollama (Local LLMs)',
+    ],
+  },
+
 ]
