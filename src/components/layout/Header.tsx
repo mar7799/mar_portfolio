@@ -12,7 +12,7 @@ export default function Header() {
         </h1>
         <div className="flex gap-1 md:gap-2 shrink-0">
           <a href="https://github.com/mar7799" target="_blank" rel="noreferrer"><Button variant="ghost" size="sm"><FiGithub /></Button></a>
-          <a href="https://linkedin.com/in/amram-raju-madipalli-694296242" target="_blank" rel="noreferrer"><Button variant="ghost" size="sm"><FiLinkedin /></Button></a>
+          <a href="https://www.linkedin.com/in/amram7779" target="_blank" rel="noreferrer"><Button variant="ghost" size="sm"><FiLinkedin /></Button></a>
           <ThemeToggle />
         </div>
       </div>

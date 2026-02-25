@@ -76,7 +76,7 @@ export default function Hero() {
             <li className="flex items-center justify-between">
               <span className="soft-text">LinkedIn</span>
               <a
-                href="https://linkedin.com/in/amram-raju-madipalli-694296242"
+                href="https://www.linkedin.com/in/amram7779"
                 className="inline-flex items-center gap-1 text-blue-700 dark:text-blue-300 hover:underline"
                 target="_blank"
                 rel="noreferrer"

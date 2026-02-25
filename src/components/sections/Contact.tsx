@@ -15,7 +15,7 @@ export default function Contact() {
               <div className="flex flex-wrap gap-3">
                 <a href="mailto:amrammadipalli@gmail.com"><Button variant="default" size="md" className="inline-flex items-center gap-2"><FiMail /> Email Me</Button></a>
                 <a href="https://github.com/mar7799" target="_blank" rel="noreferrer"><Button variant="ghost" size="md" className="inline-flex items-center gap-2"><FiGithub /> GitHub</Button></a>
-                <a href="https://linkedin.com/in/amram-raju-madipalli-694296242" target="_blank" rel="noreferrer"><Button variant="ghost" size="md" className="inline-flex items-center gap-2"><FiLinkedin /> LinkedIn</Button></a>
+                <a href="https://www.linkedin.com/in/amram7779" target="_blank" rel="noreferrer"><Button variant="ghost" size="md" className="inline-flex items-center gap-2"><FiLinkedin /> LinkedIn</Button></a>
               </div>
             </div>
           </Card>

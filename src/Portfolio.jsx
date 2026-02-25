@@ -164,7 +164,7 @@ function Hero() {
             </li>
             <li className="flex items-center justify-between">
               <span>LinkedIn</span>
-              <a href="https://linkedin.com/in/amram-raju-madipalli-694296242" className="inline-flex items-center gap-1 hover:text-indigo-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 rounded" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/amram7779" className="inline-flex items-center gap-1 hover:text-indigo-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 rounded" target="_blank" rel="noreferrer">
                 Open <FiExternalLink />
               </a>
             </li>
@@ -196,7 +196,7 @@ export default function Portfolio() {
             <a href="https://github.com/mar7799" target="_blank" rel="noreferrer" aria-label="GitHub">
               <Button variant="ghost" size="sm" className="p-2 hover:bg-indigo-50 dark:hover:bg-indigo-800 transform hover:scale-105 transition"><FiGithub /></Button>
             </a>
-            <a href="https://linkedin.com/in/amram-raju-madipalli-694296242" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/amram7779" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <Button variant="ghost" size="sm" className="p-2 hover:bg-indigo-50 dark:hover:bg-indigo-800 transform hover:scale-105 transition"><FiLinkedin /></Button>
             </a>
             <button onClick={toggle} aria-label="Toggle theme" title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>
@@ -307,7 +307,7 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-3">
                 <a href="mailto:rajuamram99@gmail.com"><Button variant="default" size="md" className="inline-flex items-center gap-2"><FiMail /> Email Me</Button></a>
                 <a href="https://github.com/mar7799" target="_blank" rel="noreferrer"><Button variant="ghost" size="md" className="inline-flex items-center gap-2"><FiGithub /> GitHub</Button></a>
-                <a href="https://linkedin.com/in/amram-raju-madipalli-694296242" target="_blank" rel="noreferrer"><Button variant="ghost" size="md" className="inline-flex items-center gap-2"><FiLinkedin /> LinkedIn</Button></a>
+                <a href="https://www.linkedin.com/in/amram7779" target="_blank" rel="noreferrer"><Button variant="ghost" size="md" className="inline-flex items-center gap-2"><FiLinkedin /> LinkedIn</Button></a>
               </div>
             </div>
           </Card>
