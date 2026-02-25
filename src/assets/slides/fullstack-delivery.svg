@@ -1,0 +1,31 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#090E25"/>
+  <rect x="120" y="95" width="960" height="510" rx="28" fill="#11183A" stroke="#A78BFA" stroke-width="2"/>
+  <rect x="180" y="170" width="840" height="90" rx="14" fill="#1E293B"/>
+  <rect x="180" y="290" width="390" height="250" rx="16" fill="#0C4A6E"/>
+  <rect x="630" y="290" width="390" height="250" rx="16" fill="#4C1D95"/>
+  <circle cx="230" cy="215" r="12" fill="#F43F5E"/>
+  <circle cx="265" cy="215" r="12" fill="#F59E0B"/>
+  <circle cx="300" cy="215" r="12" fill="#22C55E"/>
+  <text x="350" y="224" fill="#DBEAFE" font-family="Verdana" font-size="24">CI/CD + Cloud Delivery + Quality Gates</text>
+  <text x="220" y="360" fill="#BAE6FD" font-family="Verdana" font-size="30">Frontend</text>
+  <text x="220" y="405" fill="#E0F2FE" font-family="Verdana" font-size="22">React + TypeScript</text>
+  <text x="220" y="445" fill="#E0F2FE" font-family="Verdana" font-size="22">Material UI + Redux</text>
+  <text x="220" y="485" fill="#E0F2FE" font-family="Verdana" font-size="22">API Integration</text>
+  <text x="670" y="360" fill="#E9D5FF" font-family="Verdana" font-size="30">Backend</text>
+  <text x="670" y="405" fill="#F5D0FE" font-family="Verdana" font-size="22">Java + Spring Boot</text>
+  <text x="670" y="445" fill="#F5D0FE" font-family="Verdana" font-size="22">FastAPI + Python</text>
+  <text x="670" y="485" fill="#F5D0FE" font-family="Verdana" font-size="22">RAG + LLM APIs</text>
+  <circle cx="1060" cy="110" r="95" fill="url(#paint0_radial)"/>
+  <circle cx="130" cy="590" r="100" fill="url(#paint1_radial)"/>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1060 110) rotate(90) scale(95)">
+      <stop stop-color="#A78BFA" stop-opacity="0.68"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(130 590) rotate(90) scale(100)">
+      <stop stop-color="#22D3EE" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

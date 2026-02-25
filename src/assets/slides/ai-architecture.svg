@@ -1,0 +1,29 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#04091F"/>
+  <circle cx="210" cy="160" r="180" fill="url(#paint0_radial)"/>
+  <circle cx="1010" cy="520" r="260" fill="url(#paint1_radial)"/>
+  <rect x="140" y="120" width="920" height="460" rx="28" fill="#0F1A3C" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="210" y="190" width="220" height="110" rx="14" fill="#1D4ED8"/>
+  <rect x="490" y="190" width="220" height="110" rx="14" fill="#0EA5E9"/>
+  <rect x="770" y="190" width="220" height="110" rx="14" fill="#06B6D4"/>
+  <rect x="350" y="360" width="220" height="110" rx="14" fill="#9333EA"/>
+  <rect x="630" y="360" width="220" height="110" rx="14" fill="#F59E0B"/>
+  <path d="M430 245H490" stroke="#93C5FD" stroke-width="8" stroke-linecap="round"/>
+  <path d="M710 245H770" stroke="#67E8F9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M570 415H630" stroke="#FCD34D" stroke-width="8" stroke-linecap="round"/>
+  <text x="245" y="255" fill="#DBEAFE" font-family="Verdana" font-size="26">Java APIs</text>
+  <text x="526" y="255" fill="#CFFAFE" font-family="Verdana" font-size="24">FastAPI</text>
+  <text x="786" y="255" fill="#ECFEFF" font-family="Verdana" font-size="24">LLM Layer</text>
+  <text x="383" y="425" fill="#F3E8FF" font-family="Verdana" font-size="24">RAG</text>
+  <text x="687" y="425" fill="#FEF3C7" font-family="Verdana" font-size="24">Insights</text>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 160) rotate(90) scale(180)">
+      <stop stop-color="#3B82F6" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1010 520) rotate(90) scale(260)">
+      <stop stop-color="#F59E0B" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
