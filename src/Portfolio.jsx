@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { FiGithub, FiLinkedin, FiMail, FiExternalLink, FiDownload } from 'react-icons/fi'
-import my_resume from './assets/Amram M Full Stack.docx'
+import my_resume from './assets/Amram Raju Madipalli Resume.pdf'
 import Button from './components/ui/Button'
 
 // --- Data (kept compact) ---

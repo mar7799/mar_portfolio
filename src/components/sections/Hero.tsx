@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FiDownload, FiMail, FiExternalLink } from 'react-icons/fi'
 import Button from '../ui/Button'
 import Card from '../common/Card'
-import my_resume from '../../assets/Amram M Full Stack.docx'
+import my_resume from '../../assets/Amram Raju Madipalli Resume.pdf'
 
 export default function Hero() {
   const [avatarError, setAvatarError] = useState(false)
