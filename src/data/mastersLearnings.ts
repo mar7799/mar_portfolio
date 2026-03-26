@@ -1,6 +1,7 @@
 export const MASTERS_LEARNINGS = [
   {
     title: 'Computer Vision PoC (VGG16)',
+    href: 'https://github.com/mar7799/Machine-Learning-Models',
     details: [
       'Built a fake-vs-real image identification proof of concept using VGG16.',
       'Worked on image preprocessing, dataset balancing, and evaluation metrics.',

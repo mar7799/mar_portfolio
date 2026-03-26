@@ -1,0 +1,11 @@
+{
+  "_info": "ORBITA chat session logs — written by the Vite dev server when running locally (pnpm dev).",
+  "_format": {
+    "sessionId": "unique ID per browser tab — resets on every page refresh",
+    "startedAt": "ISO timestamp when the chat was first opened",
+    "lastUpdated": "ISO timestamp of last message",
+    "questionCount": "how many questions the visitor asked",
+    "messages": "full conversation transcript in order"
+  },
+  "_note": "Production visitors (GitHub Pages) cannot write here — sessions exist only in their browser tab. Run locally with pnpm dev to capture live sessions."
+}

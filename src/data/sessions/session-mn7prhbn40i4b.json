@@ -1,0 +1,19 @@
+{
+  "sessionId": "mn7prhbn40i4b",
+  "startedAt": "2026-03-26T16:55:39.635Z",
+  "lastUpdated": "2026-03-26T16:55:43.491Z",
+  "questionCount": 1,
+  "pageUrl": "http://localhost:5173/mar_portfolio/#messaging",
+  "messages": [
+    {
+      "role": "user",
+      "text": "How can I contact him?",
+      "timestamp": "2026-03-26T16:55:43.489Z"
+    },
+    {
+      "role": "assistant",
+      "text": "You can reach Amram through any of these:\n\n• Email: rajuamram99@gmail.com\n• LinkedIn: linkedin.com/in/amram7779\n• GitHub: github.com/mar7799\n\nHe's responsive and happy to chat about opportunities, technical discussions, or anything on his portfolio.",
+      "timestamp": "2026-03-26T16:55:43.491Z"
+    }
+  ]
+}
